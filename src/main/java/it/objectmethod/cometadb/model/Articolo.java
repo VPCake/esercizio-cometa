@@ -1,32 +1,41 @@
 package it.objectmethod.cometadb.model;
 
 public class Articolo {
-	private int id;
-	private int codiceLotto;
-	private int idArticolo;
+	private Integer id;
+	private String codice;
+	private String descrizione;
+	private Integer quantitaTotale;
 
-	public int getId() {
+	public Integer getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 
-	public int getCodiceLotto() {
-		return codiceLotto;
+	public String getCodice() {
+		return codice;
 	}
 
-	public void setCodiceLotto(int codiceLotto) {
-		this.codiceLotto = codiceLotto;
+	public void setCodice(String codice) {
+		this.codice = codice;
 	}
 
-	public int getIdArticolo() {
-		return idArticolo;
+	public String getDescrizione() {
+		return descrizione;
 	}
 
-	public void setIdArticolo(int idArticolo) {
-		this.idArticolo = idArticolo;
+	public void setDescrizione(String descrizione) {
+		this.descrizione = descrizione;
+	}
+
+	public Integer getQuantitaTotale() {
+		return quantitaTotale;
+	}
+
+	public void setQuantitaTotale(Integer quantitaTotale) {
+		this.quantitaTotale = quantitaTotale;
 	}
 
 }

@@ -8,5 +8,14 @@ public interface IArticoloDao {
 
 	public List<Articolo> listaArticoli();
 
-	public int numeroArticoli();
+	List<Articolo> ricercaArt(String codice, String descrizione);
+
+	Articolo getArticoloById(int id);
+
+	Integer nuovoId();
+
+	int modifica(int id, String codice, String descrizione);
+
+	int inserisci(String codice, String descrizione);
+
 }
